@@ -9,7 +9,7 @@
                 <!-- Basic Forms -->
                 <div class="box">
                     <div class="box-header with-border">
-                        <h4 class="box-title">Add Student Year</h4>
+                        <h4 class="box-title">Add Student Group</h4>
 
                     </div>
                     <!-- /.box-header -->
@@ -23,7 +23,7 @@
 
 
                                             <div class="form-group">
-                                                <h5>Student Year Name<span class="text-danger">*</span></h5>
+                                                <h5>Student Group Name<span class="text-danger">*</span></h5>
                                                 <div class="controls">
                                                     <input type="text" name="name"   class="form-control"  >
                                                     @error('name')
