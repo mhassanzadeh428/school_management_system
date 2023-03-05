@@ -57,6 +57,26 @@ $route=Route::current()->getName();
                 </ul>
             </li>
 
+
+
+            <li class="treeview {{ ($prefix == '/setups')? 'active':'' }}">
+                <a href="#">
+                    <i data-feather="mail"></i> <span>Setup Management</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="{{ route('student.class.view') }}"><i class="ti-more"></i>Student Class</a></li>
+
+                    <li><a href="{{ route('student.year.view') }}"><i class="ti-more"></i>Student Year</a></li>
+
+                </ul>
+            </li>
+
+
+
+
             <li class="treeview">
                 <ul class="treeview-menu">
                     <li><a href="profile.html"><i class="ti-more"></i>Profile</a></li>
