@@ -104,6 +104,7 @@
                 @php
 
                 $user=DB::table('users')->where('id',Auth::user()->id)->first();
+
                 @endphp
 
                 <!-- User Account-->
