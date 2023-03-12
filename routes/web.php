@@ -156,5 +156,19 @@ Route::prefix('setups')->group(function(){
     Route::get('exam/type/delete/{id}',[Backend\Setup\ExamTypeController::class,'ExamTypeDelete'])->name('exam.type.delete');
 
 
+    // School Subject
+    Route::get('school/subject/view',[Backend\Setup\SchoolSubjectController::class,'ViewSchoolSubject'])->name('school.subject.view');
+
+    Route::get('school/subject/add',[Backend\Setup\SchoolSubjectController::class,'SchoolSubjectAdd'])->name('school.subject.add');
+
+    Route::post('school/subject/store',[Backend\Setup\SchoolSubjectController::class,'SchoolSubjectStore'])->name('store.school.subject');
+
+    Route::get('school/subject/edit/{id}',[Backend\Setup\SchoolSubjectController::class,'SchoolSubjectEdit'])->name('school.subject.edit');
+
+    Route::post('school/subject/update/{id}',[Backend\Setup\SchoolSubjectController::class,'SchoolSubjectUpdate'])->name('school.subject.update');
+
+    Route::get('school/subject/delete/{id}',[Backend\Setup\SchoolSubjectController::class,'SchoolSubjectDelete'])->name('school.subject.delete');
+
+
 });
 
